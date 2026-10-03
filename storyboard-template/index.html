@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BeaverBuilt Memory Storybook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Georgia", serif; /* Warm journal */
+        background: url('woodgrain.jpg') center/cover fixed; /* C1b maple/birch */
+        color: #3a2f25; /* warm brown text */
+    }
+
+    .story-block {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        backdrop-filter: blur(2px);
+        background: rgba(255, 255, 255, 0.55); /* soft overlay for readability */
+    }
+
+    .story-block img,
+    .story-block video {
+        max-width: 90%;
+        max-height: 70vh;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .caption {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 700px;
+        line-height: 1.6;
+    }
+
+    audio {
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Auto‑loading story blocks -->
+<div id="story-container"></div>
+
+<script>
+// Auto-load images, videos, and audio from the folder
+async function loadStory() {
+    const response = await fetch('.');
+    const text = await response.text();
+
+    const container = document.getElementById('story-container');
+
+    // Match files in folder
+    const files = [...text.matchAll(/href="([^"]+\.(jpg|jpeg|png|mp4|mp3))"/gi)];
+
+    for (const file of files) {
+        const filename = file[1];
+
+        const block = document.createElement('div');
+        block.className = 'story-block';
+
+        if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            const img = document.createElement('img');
+            img.src = filename;
+            block.appendChild(img);
+
+        } else if (filename.match(/\.mp4$/i)) {
+            const vid = document.createElement('video');
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+
+        } else if (filename.match(/\.mp3$/i)) {
+            const aud = document.createElement('audio');
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+        }
+
+        // Optional caption file: filename.txt
+        const captionName = filename.replace(/\.(jpg|jpeg|png|mp4|mp3)$/i, '.txt');
+        try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+                const captionText = await capResp.text();
+                const caption = document.createElement('div');
+                caption.className = 'caption';
+                caption.textContent = captionText;
+                block.appendChild(caption);
+            }
+        } catch {}
+
+        container.appendChild(block);
+    }
+}
+
+loadStory();
+</script>
+
+</body>
+</html>
