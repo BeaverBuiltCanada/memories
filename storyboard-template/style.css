@@ -1,9 +1,55 @@
-.story-block {
-  opacity: 0;
-  animation: fadeIn 1.2s ease forwards;
-}
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Georgia", serif; /* Warm journal */
+        background: url('Wood034_4K-JPG_Color.jpg') center/cover fixed; /* C1b maple/birch */
+        color: #3a2f25; /* warm brown text */
+    }
 
 @keyframes fadeIn {
   to { opacity: 1; }
 }
+
+    .story-block {
+       opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        backdrop-filter: blur(2px);
+        background: rgba(255, 255, 255, 0.55); /* soft overlay for readability */
+    }
+
+    .story-block img,
+    .story-block video {
+        max-width: 90%;
+        max-height: 70vh;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .caption {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 700px;
+        line-height: 1.6;
+    }
+
+    audio {
+        margin-top: 20px;
+    }
+</style>
+
+
+
+
+
+
+
+
 
