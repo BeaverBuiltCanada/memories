@@ -1,53 +1,66 @@
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Georgia", serif; /* Warm journal */
-        background: url('./photos/wood-grain.jpg') center/cover fixed; /* C1b maple/birch */
-        color: #3a2f25; /* warm brown text */
-    }
+/* ===========================
+   GLOBAL PAGE STYLING
+   =========================== */
 
-@keyframes fadeIn {
-  to { opacity: 1; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    background: url('./photos/wood-grain.jpg') center/cover fixed;
+    color: #3a2f25;
 }
 
-    .story-block {
-       opacity: 0;
-  animation: fadeIn 2.5s ease 0.4s forwards;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 20px;
-        backdrop-filter: blur(2px);
-    }
+/* ===========================
+   FADE-IN ANIMATION
+   =========================== */
 
-    .story-block img,
-    .story-block video {
-        max-width: 90%;
-        max-height: 70vh;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    }
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
 
-    .caption {
-        margin-top: 20px;
-        font-size: 1.2rem;
-        text-align: center;
-        max-width: 700px;
-        line-height: 1.6;
-    }
+/* ===========================
+   STORY BLOCKS
+   =========================== */
 
-    audio {
-        margin-top: 20px;
-    }
-</style>
+.story-block {
+    opacity: 0;
+    animation: fadeIn 2.5s ease 0.4s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    backdrop-filter: blur(2px);
+}
 
+/* ===========================
+   MEDIA ELEMENTS
+   =========================== */
 
+.story-block img,
+.story-block video {
+    max-width: 90%;
+    max-height: 70vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
 
+/* ===========================
+   CAPTIONS
+   =========================== */
 
+.caption {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.6;
+}
 
+/* ===========================
+   AUDIO PLAYER
+   =========================== */
 
-
-
-
+audio {
+    margin-top: 20px;
+}
