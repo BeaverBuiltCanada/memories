@@ -13,9 +13,9 @@
 
     .story-block {
        opacity: 0;
-  animation: fadeIn 1.2s ease forwards;
-        padding-top: 40px;
-        padding-bottom: 40px;
+  animation: fadeIn 2.5s ease 0.4sforwards;
+        padding-top: 50px;
+        padding-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
