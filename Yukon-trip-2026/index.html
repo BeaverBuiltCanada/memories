@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BeaverBuilt Memory Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Auto‑loading story blocks -->
+    <div id="story-container"></div>
+
+    <script>
+      async function loadStory() {
+        const container = document.getElementById("story-container");
+        const files = [
+          "photos/CarcrossDessert1.jpg",
+          "photos/CarcrossDessert2.jpg",
+          "photos/CarcrossDessert3.jpg",
+          "photos/CarcrossDessert4.jpg",
+          "photos/JadeCity1.jpg",
+          "photos/JadeCity2.jpg",
+          "photos/JadeCity3.jpg",
+          "photos/JadeCity4.jpg",
+          "photos/JadeCity5.jpg",
+          "photos/JadeCity6.jpg",
+          "photos/JadeCity7.jpg",
+          "photos/JadeCity8.jpg",
+          "photos/JadeCity9.jpg",
+          "photos/JadeCity10.jpg",
+          "photos/JadeCity11.jpg",
+          "photos/JadeCity12.jpg",
+
+          // add all your filenames here
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            const img = document.createElement("img");
+            img.src = filename;
+            block.appendChild(img);
+          } else if (filename.match(/\.mp4$/i)) {
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.textContent = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+      loadStory();
+    </script>
+  </body>
+</html>
