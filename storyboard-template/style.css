@@ -14,14 +14,15 @@
     .story-block {
        opacity: 0;
   animation: fadeIn 1.2s ease forwards;
-        min-height: 100vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 40px 20px;
         backdrop-filter: blur(2px);
-        background: rgba(255, 255, 255, 0.55); /* soft overlay for readability */
+        background: rgba(255, 255, 255, 0.25); /* soft overlay for readability */
     }
 
     .story-block img,
