@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         font-family: "Georgia", serif; /* Warm journal */
-        background: url('Wood034_4K-JPG_Color.jpg') center/cover fixed; /* C1b maple/birch */
+        background: url('./photos/wood-grain.jpg') center/cover fixed; /* C1b maple/birch */
         color: #3a2f25; /* warm brown text */
     }
 
