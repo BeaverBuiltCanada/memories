@@ -1,5 +1,5 @@
 <div class="tumbleweed-wrapper">
-  And so... The Great Yukon 2026 Adventure begins...08-20-2026.
+08-20-2026 - 
   First stop Chetwynd, B.C.
   <span class="windy">They should have called it Chet Wind!</span>
   <div class="tumbleweed"></div>
