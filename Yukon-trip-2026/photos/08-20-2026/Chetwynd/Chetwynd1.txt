@@ -1,12 +1,12 @@
 <div class="tumbleweed-wrapper">
-08-20-2026 - 
-  First stop Chetwynd, B.C.
+
+  Next stop Chetwynd, B.C.
   <span class="windy">They should have called it Chet Wind!</span>
   <div class="tumbleweed"></div>
 
 Home of the yearly - World Chainsaw Carving Competitions.</div>
 <div>
-<p>Please excuse any cheesy animations and overuse of captioning text boxes. They are added for humor purposes only, and if anyone knew my Grandpa Bill, they know he loved humor</p>
+<p>Please excuse any cheesy animations and overuse of captioning text boxes. They are added for humor purposes only, and if anyone knew my Grandpa Bill, they know he loved humor and was a bit of a prankster.</p>
  <p>As I am learning coding and getting great enjoyment while doing it.
 </div>
 <div>disclaimer: if they sound extremely cheesy, I blame A.I. (not yet S.I. wink, wink, if you know you know.)</div>

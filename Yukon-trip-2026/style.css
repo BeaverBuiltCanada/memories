@@ -163,6 +163,16 @@ body::after {
   width: fit-content;
 }
 
+.date {
+  font-family: "Georgia", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 30px auto 20px auto;
+  color: #3a2f25;
+  width: fit-content;
+}
+
 /* ===========================
    FADE-IN ANIMATION
    =========================== */
@@ -256,6 +266,13 @@ body {
   100% {
     transform: translateX(-50%);
   }
+}
+
+#story-2026-08-20,
+#story-2026-08-21,
+#story-2026-08-22 {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* ===========================

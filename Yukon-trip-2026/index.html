@@ -11,7 +11,8 @@
     <section id="dedication">
       <div class="story-block dedication-block">
         <h1 class="dedication-title">
-          dedicated in loving memory of my Grandfather<br />
+          This storybook / photo gallery is dedicated in loving memory of my
+          Grandfather<br />
           <span class="dedication-name">William James Fitzgerald</span><br />
           <span class="dedication-aka"> aka: Bill — Grandpa</span>
         </h1>
@@ -39,12 +40,12 @@
         <p class="caption dedication-caption">
           We always loved spending time together, ever since I was a little kid.
           I am so greatful for the time we got to share when I brought Grandpa
-          to Edmonton on the train.<br /><br />We had planned on taking a trip
-          to the Yukon when I turned 16. Unfortunately we were never able to
-          take it. I was finally able to take it with my own family. This
-          journey was meant to be shared — mile by mile, story by story. Every
-          stop, every sign, every photo is a piece of the road we imagined
-          together.
+          to Edmonton on the train.<br /><br />As a litle kid, we had planned on
+          taking a trip to the Yukon when I turned 16. Unfortunately we were
+          never able to take it. I was finally able to take it with my own
+          family. This journey was meant to be shared — mile by mile, story by
+          story. Every stop, every sign, every photo is a piece of the road we
+          imagined together.
         </p>
       </div>
     </section>
@@ -52,15 +53,17 @@
     <h2 class="trip-start-header">
       And so… The Great Yukon 2026 Adventure begins
     </h2>
+    <!--Thursday-->
+    <h5 class="date">Thursday, August 20, 2026</h5>
 
-    <!-- Auto‑loading story blocks -->
-    <div id="story-container"></div>
+    <div id="story-2026-08-20"></div>
 
     <script>
-      async function loadStory() {
-        const container = document.getElementById("story-container");
+      async function loadStory_2026_08_20() {
+        const container = document.getElementById("story-2026-08-20");
 
         const files = [
+          "photos/08-20-2026/001.jpg",
           "photos/08-20-2026/Chetwynd/Chetwynd1.jpg",
           "photos/08-20-2026/Chetwynd/Chetwynd2.jpg",
           "photos/08-20-2026/Chetwynd/Chetwynd3.jpg",
@@ -76,243 +79,12 @@
           "photos/08-20-2026/Chetwynd/Chetwynd13.jpg",
           "photos/08-20-2026/Chetwynd/Chetwynd14.jpg",
           "photos/08-20-2026/Chetwynd/Chetwynd15.jpg",
-          "photos/08-20-2026/S-p-08-20-2026.jpg",
+
           "photos/08-20-2026/S-p-08-20-2026-001.jpg",
           "photos/08-20-2026/S-p-08-20-2026-002.jpg",
           "photos/08-20-2026/Dawson-Creek/DawsonCreek001.jpg",
           "photos/08-20-2026/Dawson-Creek/DawsonCreek002.jpg",
           "photos/08-20-2026/Dawson-Creek/DawsonCreek003.jpg",
-
-          "photos/08-21-2026/001.jpg",
-          "photos/08-21-2026/S-p-08-21-2026-001.jpg",
-          "photos/08-21-2026/S-p-08-21-2026-002.jpg",
-          "photos/08-21-2026/S-p-08-21-2026-003.jpg",
-          "photos/08-21-2026/S-p-08-21-2026-004.jpg",
-          "photos/08-21-2026/s-p-2-43.jpg",
-          "photos/08-21-2026/S-p-08-21-2026-006.jpg",
-          "photos/08-21-2026/S-p-08-21-2026-005.jpg",
-
-          "photos/08-21-2026/s-p-pm-8-14.jpg",
-          "photos/08-21-2026/s-p-pm-8-17.jpg",
-
-          "photos/08-22-2026/S-p-08-22-2026-001.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-002.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-003.jpg",
-          "photos/08-22-2026/003.jpg",
-          "photos/08-22-2026/001.jpg",
-          "photos/08-22-2026/002.jpg",
-          "photos/08-22-2026/004.jpg",
-          "photos/08-22-2026/s-p-am-11-44.jpg",
-          "photos/08-22-2026/s-p-am-11-53.jpg",
-          "photos/08-22-2026/s-p-am-11-54.jpg",
-          "photos/08-22-2026/005.jpg",
-          "photos/08-22-2026/006.jpg",
-
-          "photos/08-22-2026/S-p-08-22-2026-004.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-005.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-006.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-007.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-008.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-009.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-010.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-011.jpg",
-          "photos/08-22-2026/007.jpg",
-          "photos/08-22-2026/008.jpg",
-          "photos/08-22-2026/010_pano.jpg",
-          "photos/08-22-2026/009.jpg",
-          "photos/08-22-2026/012.jpg",
-          "photos/08-22-2026/013.jpg",
-          "photos/08-22-2026/014.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-012.jpg",
-          "photos/08-22-2026/016.jpg",
-          "photos/08-22-2026/S-p-08-22-2026-013.jpg",
-          "photos/08-22-2026/015.jpg",
-
-          "photos/08-22-2026/017.jpg",
-          "photos/08-22-2026/018.jpg",
-          "photos/08-22-2026/019.jpg",
-          "photos/08-22-2026/020.jpg",
-          "photos/08-22-2026/021.jpg",
-          "photos/08-22-2026/022.jpg",
-          "photos/08-22-2026/023.jpg",
-          "photos/08-22-2026/024.jpg",
-
-          "photos/08-23-2026/S-p-08-23-2026-004.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-001.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-002.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-003.jpg",
-
-          "photos/08-23-2026/S-p-08-23-2026-005.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-006.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-007.jpg",
-          "photos/08-23-2026/001.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-008.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-009.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-010.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-011.jpg",
-          "photos/08-23-2026/002.jpg",
-          "photos/08-23-2026/003.jpg",
-          "photos/08-23-2026/004.jpg",
-          "photos/08-23-2026/005.jpg",
-          "photos/08-23-2026/006.jpg",
-          "photos/08-23-2026/S-p-08-23-2026-012.jpg",
-          "photos/08-23-2026/007.jpg",
-
-          "photos/08-24-2026/S-p-08-24-2026-001.jpg",
-          "photos/08-24-2026/S-p-08-24-2026-002.jpg",
-          "photos/08-24-2026/S-p-08-24-2026-003.jpg",
-          "photos/08-24-2026/S-p-08-24-2026-004.jpg",
-          "photos/08-24-2026/S-p-08-24-2026-005.jpg",
-
-          "photos/08-24-2026/001.jpg",
-          "photos/08-24-2026/002.jpg",
-          "photos/08-24-2026/003.jpg",
-          "photos/08-24-2026/004.jpg",
-          "photos/08-24-2026/005.jpg",
-          "photos/08-24-2026/006.jpg",
-          "photos/08-24-2026/009.jpg",
-          "photos/08-24-2026/010.jpg",
-          "photos/08-24-2026/011.jpg",
-          "photos/08-24-2026/012.jpg",
-          "photos/08-24-2026/013.jpg",
-          "photos/08-24-2026/014.jpg",
-          "photos/08-24-2026/015.jpg",
-          "photos/08-24-2026/016.jpg",
-          "photos/08-24-2026/017.jpg",
-          "photos/08-24-2026/018.jpg",
-          "photos/08-24-2026/019.jpg",
-          "photos/08-24-2026/020.jpg",
-          "photos/08-24-2026/021.jpg",
-          "photos/08-24-2026/S-p-08-24-2026-007.jpg",
-          "photos/08-24-2026/022.jpg",
-
-          "photos/08-24-2026/023.jpg",
-          "photos/08-24-2026/024.jpg",
-          "photos/08-24-2026/025.jpg",
-          "photos/08-24-2026/026.jpg",
-          "photos/08-24-2026/027.jpg",
-          "photos/08-24-2026/S-p-08-24-2026-006.jpg",
-
-          "photos/08-24-2026/S-p-08-24-2026-009.jpg",
-
-          "photos/08-24-2026/028_pano.jpg",
-          "photos/08-24-2026/029.jpg",
-          "photos/08-24-2026/030.jpg",
-
-          "photos/08-25-2026/001.jpg",
-          "photos/08-25-2026/002.jpg",
-          "photos/08-25-2026/003.jpg",
-          "photos/08-25-2026/004.jpg",
-          "photos/08-25-2026/005.jpg",
-          "photos/08-25-2026/006.jpg",
-          "photos/08-25-2026/007.jpg",
-          "photos/08-25-2026/008.jpg",
-          "photos/08-25-2026/S-p-08-25-2026.jpg",
-          "photos/08-25-2026/S-p-08-25-2026-002.jpg",
-          "photos/08-25-2026/S-p-08-25-2026-003.jpg",
-          "photos/08-25-2026/S-p-08-25-2026-004.jpg",
-          "photos/08-25-2026/S-p-08-25-2026-005.jpg",
-          "photos/08-25-2026/S-p-08-25-2026-006.jpg",
-          "photos/08-25-2026/S-p-08-25-2026-007.jpg",
-          "photos/08-25-2026/009.jpg",
-          "photos/08-25-2026/010.jpg",
-
-          "photos/08-26-2026/001.jpg",
-          "photos/08-26-2026/002.jpg",
-          "photos/08-26-2026/003.jpg",
-          "photos/08-26-2026/004.jpg",
-          "photos/08-26-2026/006.jpg",
-          "photos/08-26-2026/007.jpg",
-          "photos/08-26-2026/008.jpg",
-          "photos/08-26-2026/012.jpg",
-          "photos/08-26-2026/014.jpg",
-          "photos/08-26-2026/017.jpg",
-          "photos/08-21-2026/s-p-am-11-40.jpg",
-          "photos/08-26-2026/019.jpg",
-          "photos/08-26-2026/020.jpg",
-          "photos/08-26-2026/021.jpg",
-          "photos/08-26-2026/022.jpg",
-          "photos/08-26-2026/023.jpg",
-          "photos/08-26-2026/024.jpg",
-          "photos/08-26-2026/025.jpg",
-          "photos/08-26-2026/027.jpg",
-          "photos/08-26-2026/028.jpg",
-          "photos/08-26-2026/029.jpg",
-          "photos/08-26-2026/030.jpg",
-          "photos/08-26-2026/031.jpg",
-          "photos/08-26-2026/032.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-001.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-002.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-003.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-004.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-005.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-006.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-007.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-008.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-009.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-010.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-011.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-012.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-013.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-014.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-015.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-016.jpg",
-          "photos/08-26-2026/S-p-08-26-2026-017.jpg",
-          "photos/08-21-2026/s-p-pm-3-15.jpg",
-
-          "photos/08-27-2026/001.jpg",
-
-          "photos/08-28-2026/001.jpg",
-          "photos/08-28-2026/002.jpg",
-          "photos/08-28-2026/003.jpg",
-          "photos/08-28-2026/004.jpg",
-          "photos/08-28-2026/005.jpg",
-          "photos/08-28-2026/006.jpg",
-          "photos/08-28-2026/007.jpg",
-          "photos/08-28-2026/CarcrossDessert1.jpg",
-          "photos/08-28-2026/S-p-08-28-2026-001.jpg",
-          "photos/08-28-2026/S-p-08-28-2026-002.jpg",
-          "photos/08-28-2026/S-p-08-28-2026-003.jpg",
-          "photos/08-28-2026/008.jpg",
-          "photos/08-28-2026/009.jpg",
-          "photos/08-28-2026/010.jpg",
-          "photos/08-28-2026/011.jpg",
-          "photos/08-28-2026/012.jpg",
-          "photos/08-28-2026/013.jpg",
-          "photos/08-28-2026/014_pano.jpg",
-          "photos/08-28-2026/CarcrossDessert2.jpg",
-          "photos/08-28-2026/CarcrossDessert3.jpg",
-          "photos/08-28-2026/015_pano_Carcross.jpg",
-          "photos/08-28-2026/CarcrossDessert4.jpg",
-          "photos/08-28-2026/016.jpg",
-          "photos/08-28-2026/017.jpg",
-          "photos/08-28-2026/018.jpg",
-          "photos/08-28-2026/019.jpg",
-          "photos/08-28-2026/020.jpg",
-          "photos/08-28-2026/021.jpg",
-          "photos/08-28-2026/022.jpg",
-          "photos/08-28-2026/023.jpg",
-          "photos/08-28-2026/024.jpg",
-          "photos/08-28-2026/025.jpg",
-          "photos/08-28-2026/026.jpg",
-          "photos/08-28-2026/027.jpg",
-          "photos/08-28-2026/028.jpg",
-          "photos/08-28-2026/JadeCity6.jpg",
-          "photos/08-28-2026/JadeCity7.jpg",
-          "photos/08-28-2026/JadeCity8.jpg",
-          "photos/08-28-2026/JadeCity1.jpg",
-          "photos/08-28-2026/JadeCity2.jpg",
-          "photos/08-28-2026/JadeCity3.jpg",
-          "photos/08-28-2026/JadeCity4.jpg",
-          "photos/08-28-2026/JadeCity5.jpg",
-          "photos/08-28-2026/S-p-08-28-2026-004.jpg",
-          "photos/08-28-2026/JadeCity9.jpg",
-          "photos/08-28-2026/JadeCity10.jpg",
-          "photos/08-28-2026/JadeCity11.jpg",
-          "photos/08-28-2026/JadeCity12.jpg",
-          "photos/08-28-2026/S-p-08-28-2026-005.jpg",
-          "photos/08-28-2026/S-p-08-28-2026-006.jpg",
-          "photos/08-28-2026/S-p-08-28-2026-007.jpg",
         ];
 
         for (const filename of files) {
@@ -325,7 +97,8 @@
           if (filename.match(/\.(jpg|jpeg|png)$/i)) {
             // PANORAMA
             if (filename.toLowerCase().includes("pano")) {
-              block.classList.add("pano"); // <-- THIS is the missing piece
+              block.classList.add("pano");
+
               const kb = document.createElement("div");
               kb.className = "kb-container";
 
@@ -339,10 +112,11 @@
 
               kb.appendChild(img1);
               kb.appendChild(img2);
-
               block.appendChild(kb);
-            } else {
-              // NORMAL PHOTO
+            }
+
+            // NORMAL PHOTO
+            else {
               const img = document.createElement("img");
               img.src = filename;
               block.appendChild(img);
@@ -388,7 +162,954 @@
         }
       }
 
-      loadStory();
+      loadStory_2026_08_20();
+    </script>
+    //Friday
+    <h5 class="date">Friday, August 21, 2026</h5>
+
+    <div id="story-2026-08-21"></div>
+
+    <script>
+      async function loadStory_2026_08_21() {
+        const container = document.getElementById("story-2026-08-21");
+
+        const files = [
+          "photos/08-21-2026/001.jpg",
+          "photos/08-21-2026/S-p-08-21-2026-001.jpg",
+          "photos/08-21-2026/S-p-08-21-2026-002.jpg",
+          "photos/08-21-2026/S-p-08-21-2026-003.jpg",
+          "photos/08-21-2026/S-p-08-21-2026-004.jpg",
+          "photos/08-21-2026/s-p-2-43.jpg",
+          "photos/08-21-2026/S-p-08-21-2026-006.jpg",
+          "photos/08-21-2026/S-p-08-21-2026-005.jpg",
+          "photos/08-21-2026/s-p-pm-8-14.jpg",
+          "photos/08-21-2026/s-p-pm-8-17.jpg",
+          "photos/08-21-2026/s-p-pm-3-15.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          /* -------------------------
+         IMAGE (JPG / PNG)
+      ------------------------- */
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            // PANORAMA
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            }
+
+            // NORMAL PHOTO
+            else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          } else if (filename.match(/\.mp4$/i)) {
+            /* -------------------------
+         VIDEO (MP4)
+      ------------------------- */
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            /* -------------------------
+         AUDIO (MP3)
+      ------------------------- */
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          /* -------------------------
+         CAPTION
+      ------------------------- */
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_21();
+    </script>
+    //Saturday
+    <h5 class="date">Saturday, August 22, 2026</h5>
+
+    <div id="story-2026-08-22"></div>
+
+    <script>
+      async function loadStory_2026_08_22() {
+        const container = document.getElementById("story-2026-08-22");
+
+        const files = [
+          "photos/08-22-2026/S-p-08-22-2026-001.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-002.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-003.jpg",
+          "photos/08-22-2026/003.jpg",
+          "photos/08-22-2026/001.jpg",
+          "photos/08-22-2026/002.jpg",
+          "photos/08-22-2026/004.jpg",
+          "photos/08-22-2026/s-p-am-11-44.jpg",
+          "photos/08-22-2026/s-p-am-11-53.jpg",
+          "photos/08-22-2026/s-p-am-11-54.jpg",
+          "photos/08-22-2026/005.jpg",
+          "photos/08-22-2026/006.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-004.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-005.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-006.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-007.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-008.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-009.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-010.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-011.jpg",
+          "photos/08-22-2026/007.jpg",
+          "photos/08-22-2026/008.jpg",
+          "photos/08-22-2026/010_pano.jpg",
+          "photos/08-22-2026/009.jpg",
+          "photos/08-22-2026/012.jpg",
+          "photos/08-22-2026/013.jpg",
+          "photos/08-22-2026/014.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-012.jpg",
+          "photos/08-22-2026/016.jpg",
+          "photos/08-22-2026/S-p-08-22-2026-013.jpg",
+          "photos/08-22-2026/015.jpg",
+          "photos/08-22-2026/017.jpg",
+          "photos/08-22-2026/018.jpg",
+          "photos/08-22-2026/019.jpg",
+          "photos/08-22-2026/020.jpg",
+          "photos/08-22-2026/021.jpg",
+          "photos/08-22-2026/022.jpg",
+          "photos/08-22-2026/023.jpg",
+          "photos/08-22-2026/024.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          /* -------------------------
+         IMAGE (JPG / PNG)
+      ------------------------- */
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            // PANORAMA
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            }
+
+            // NORMAL PHOTO
+            else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          } else if (filename.match(/\.mp4$/i)) {
+            /* -------------------------
+         VIDEO (MP4)
+      ------------------------- */
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            /* -------------------------
+         AUDIO (MP3)
+      ------------------------- */
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          /* -------------------------
+         CAPTION
+      ------------------------- */
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_22();
+    </script>
+    //Sunday
+    <h5 class="date">Sunday, August 23, 2026</h5>
+
+    <div id="story-2026-08-23"></div>
+
+    <script>
+      async function loadStory_2026_08_23() {
+        const container = document.getElementById("story-2026-08-23");
+
+        const files = [
+          "photos/08-23-2026/S-p-08-23-2026-004.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-001.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-002.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-003.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-005.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-006.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-007.jpg",
+          "photos/08-23-2026/001.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-008.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-009.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-010.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-011.jpg",
+          "photos/08-23-2026/002.jpg",
+          "photos/08-23-2026/003.jpg",
+          "photos/08-23-2026/004.jpg",
+          "photos/08-23-2026/005.jpg",
+          "photos/08-23-2026/006.jpg",
+          "photos/08-23-2026/S-p-08-23-2026-012.jpg",
+          "photos/08-23-2026/007.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          /* -------------------------
+         IMAGE (JPG / PNG)
+      ------------------------- */
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            // PANORAMA
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            }
+
+            // NORMAL PHOTO
+            else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          } else if (filename.match(/\.mp4$/i)) {
+            /* -------------------------
+         VIDEO (MP4)
+      ------------------------- */
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            /* -------------------------
+         AUDIO (MP3)
+      ------------------------- */
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          /* -------------------------
+         CAPTION
+      ------------------------- */
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_23();
+    </script>
+    // Monday
+    <h5 class="date">Monday, August 24, 2026</h5>
+
+    <div id="story-2026-08-24"></div>
+
+    <script>
+      async function loadStory_2026_08_24() {
+        const container = document.getElementById("story-2026-08-24");
+
+        const files = [
+          "photos/08-24-2026/S-p-08-24-2026-001.jpg",
+          "photos/08-24-2026/S-p-08-24-2026-002.jpg",
+          "photos/08-24-2026/S-p-08-24-2026-003.jpg",
+          "photos/08-24-2026/S-p-08-24-2026-004.jpg",
+          "photos/08-24-2026/001.jpg",
+          "photos/08-24-2026/002.jpg",
+          "photos/08-24-2026/003.jpg",
+          "photos/08-24-2026/004.jpg",
+          "photos/08-24-2026/005.jpg",
+          "photos/08-24-2026/006.jpg",
+          "photos/08-24-2026/009.jpg",
+          "photos/08-24-2026/010.jpg",
+          "photos/08-24-2026/011.jpg",
+          "photos/08-24-2026/S-p-08-24-2026-005.jpg",
+          "photos/08-24-2026/012.jpg",
+          "photos/08-24-2026/013.jpg",
+          "photos/08-24-2026/014.jpg",
+          "photos/08-24-2026/015.jpg",
+          "photos/08-24-2026/016.jpg",
+          "photos/08-24-2026/017.jpg",
+          "photos/08-24-2026/018.jpg",
+          "photos/08-24-2026/019.jpg",
+          "photos/08-24-2026/020.jpg",
+          "photos/08-24-2026/S-p-08-24-2026-006.jpg",
+          "photos/08-24-2026/021.jpg",
+          "photos/08-24-2026/S-p-08-24-2026-007.jpg",
+          "photos/08-24-2026/022.jpg",
+          "photos/08-24-2026/023.jpg",
+          "photos/08-24-2026/024.jpg",
+          "photos/08-24-2026/025.jpg",
+          "photos/08-24-2026/026.jpg",
+          "photos/08-24-2026/027.jpg",
+          "photos/08-24-2026/S-p-08-24-2026-009.jpg",
+          "photos/08-24-2026/028_pano.jpg",
+          "photos/08-24-2026/029.jpg",
+          "photos/08-24-2026/030.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          /* -------------------------
+         IMAGE (JPG / PNG)
+      ------------------------- */
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            // PANORAMA
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            }
+
+            // NORMAL PHOTO
+            else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          } else if (filename.match(/\.mp4$/i)) {
+            /* -------------------------
+         VIDEO (MP4)
+      ------------------------- */
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            /* -------------------------
+         AUDIO (MP3)
+      ------------------------- */
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          /* -------------------------
+         CAPTION
+      ------------------------- */
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_24();
+    </script>
+    // Tuesday
+    <h5 class="date">Tuesday, August 25, 2026</h5>
+
+    <div id="story-2026-08-25"></div>
+
+    <script>
+      async function loadStory_2026_08_25() {
+        const container = document.getElementById("story-2026-08-25");
+
+        const files = [
+          "photos/08-25-2026/001.jpg",
+          "photos/08-25-2026/002.jpg",
+          "photos/08-25-2026/003.jpg",
+          "photos/08-25-2026/004.jpg",
+          "photos/08-25-2026/005.jpg",
+          "photos/08-25-2026/006.jpg",
+          "photos/08-25-2026/007.jpg",
+          "photos/08-25-2026/008.jpg",
+          "photos/08-25-2026/S-p-08-25-2026.jpg",
+          "photos/08-25-2026/S-p-08-25-2026-002.jpg",
+          "photos/08-25-2026/S-p-08-25-2026-003.jpg",
+          "photos/08-25-2026/009.jpg",
+          "photos/08-25-2026/S-p-08-25-2026-004.jpg",
+          "photos/08-25-2026/S-p-08-25-2026-005.jpg",
+          "photos/08-25-2026/S-p-08-25-2026-006.jpg",
+          "photos/08-25-2026/S-p-08-25-2026-007.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          /* -------------------------
+         IMAGE (JPG / PNG)
+      ------------------------- */
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            // PANORAMA
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            }
+
+            // NORMAL PHOTO
+            else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          } else if (filename.match(/\.mp4$/i)) {
+            /* -------------------------
+         VIDEO (MP4)
+      ------------------------- */
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            /* -------------------------
+         AUDIO (MP3)
+      ------------------------- */
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          /* -------------------------
+         CAPTION
+      ------------------------- */
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_25();
+    </script>
+    <!--Wednesday-->
+    <h5 class="date">Wednesday, August 26, 2026</h5>
+
+    <div id="story-2026-08-26"></div>
+
+    <script>
+      async function loadStory_2026_08_26() {
+        const container = document.getElementById("story-2026-08-26");
+
+        const files = [
+          "photos/08-26-2026/S-p-08-26-2026-001.jpg",
+          "photos/08-26-2026/S-p-08-26-2026-015.jpg",
+          "photos/08-26-2026/S-p-08-26-2026-016.jpg",
+          "photos/08-26-2026/S-p-08-26-2026-017.jpg",
+          "photos/08-26-2026/S-p-08-26-2026-003.jpg",
+          "photos/08-26-2026/S-p-08-26-2026-002.jpg",
+          "photos/08-26-2026/S-p-08-26-2026-004.jpg",
+          "photos/08-26-2026/S-p-08-26-2026-005.jpg",
+          "photos/08-26-2026/001.jpg",
+          "photos/08-26-2026/S-p-008.jpg",
+          "photos/08-26-2026/S-p-007.jpg",
+          "photos/08-26-2026/S-p-009.jpg",
+          "photos/08-26-2026/002.jpg",
+
+          "photos/08-26-2026/004.jpg",
+          "photos/08-26-2026/006.jpg",
+          "photos/08-26-2026/007.jpg",
+          "photos/08-26-2026/S-p-011.jpg",
+          "photos/08-26-2026/S-p-010.jpg",
+          "photos/08-26-2026/008.jpg",
+          "photos/08-26-2026/012.jpg",
+
+          "photos/08-26-2026/S-p-012.jpg",
+          "photos/08-26-2026/S-p-013.jpg",
+          "photos/08-26-2026/S-p-014.jpg",
+          //dredge
+          "photos/08-26-2026/014.jpg",
+          "photos/08-26-2026/017.jpg",
+          "photos/08-26-2026/019.jpg",
+          "photos/08-26-2026/020.jpg",
+          "photos/08-26-2026/021.jpg",
+          "photos/08-26-2026/022.jpg",
+          "photos/08-26-2026/023.jpg",
+          "photos/08-26-2026/024.jpg",
+          "photos/08-26-2026/025.jpg",
+          "photos/08-26-2026/027.jpg",
+          "photos/08-26-2026/028.jpg",
+          "photos/08-26-2026/029.jpg",
+          "photos/08-26-2026/030.jpg",
+          "photos/08-26-2026/031.jpg",
+          "photos/08-26-2026/032.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          /* -------------------------
+             IMAGE (JPG / PNG)
+          ------------------------- */
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            // PANORAMA
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            }
+
+            // NORMAL PHOTO
+            else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          } else if (filename.match(/\.mp4$/i)) {
+            /* -------------------------
+             VIDEO (MP4)
+          ------------------------- */
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            /* -------------------------
+             AUDIO (MP3)
+          ------------------------- */
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          /* -------------------------
+         CAPTION
+      ------------------------- */
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_26();
+    </script>
+
+    <!--Thursday-->
+    <h5 class="date">Thursday, August 27, 2026</h5>
+
+    <div id="story-2026-08-27"></div>
+
+    <script>
+      async function loadStory_2026_08_27() {
+        const container = document.getElementById("story-2026-08-27");
+
+        const files = ["photos/08-27-2026/001.jpg"];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            } else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          }
+
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_27();
+    </script>
+
+    <!--Friday-->
+    <h5 class="date">Friday, August 28, 2026</h5>
+
+    <div id="story-2026-08-28"></div>
+
+    <script>
+      async function loadStory_2026_08_28() {
+        const container = document.getElementById("story-2026-08-28");
+
+        const files = [
+          "photos/08-28-2026/001.jpg",
+          "photos/08-28-2026/002.jpg",
+          "photos/08-28-2026/003.jpg",
+          "photos/08-28-2026/004.jpg",
+          "photos/08-28-2026/005.jpg",
+          "photos/08-28-2026/006.jpg",
+          "photos/08-28-2026/007.jpg",
+          "photos/08-28-2026/CarcrossDessert1.jpg",
+          "photos/08-28-2026/S-p-08-28-2026-001.jpg",
+          "photos/08-28-2026/S-p-08-28-2026-002.jpg",
+          "photos/08-28-2026/S-p-08-28-2026-003.jpg",
+          "photos/08-28-2026/008.jpg",
+          "photos/08-28-2026/009.jpg",
+          "photos/08-28-2026/010.jpg",
+          "photos/08-28-2026/011.jpg",
+          "photos/08-28-2026/012.jpg",
+          "photos/08-28-2026/013.jpg",
+          "photos/08-28-2026/014_pano.jpg",
+          "photos/08-28-2026/CarcrossDessert2.jpg",
+          "photos/08-28-2026/CarcrossDessert3.jpg",
+          "photos/08-28-2026/015_pano_Carcross.jpg",
+          "photos/08-28-2026/CarcrossDessert4.jpg",
+          "photos/08-28-2026/016.jpg",
+          "photos/08-28-2026/017.jpg",
+          "photos/08-28-2026/018.jpg",
+          "photos/08-28-2026/019.jpg",
+          "photos/08-28-2026/020.jpg",
+          "photos/08-28-2026/021.jpg",
+          "photos/08-28-2026/022.jpg",
+          "photos/08-28-2026/023.jpg",
+          "photos/08-28-2026/024.jpg",
+          "photos/08-28-2026/025.jpg",
+
+          "photos/08-28-2026/JadeCity6.jpg",
+          "photos/08-28-2026/JadeCity7.jpg",
+          "photos/08-28-2026/JadeCity8.jpg",
+          "photos/08-28-2026/JadeCity1.jpg",
+          "photos/08-28-2026/JadeCity2.jpg",
+          "photos/08-28-2026/JadeCity3.jpg",
+          "photos/08-28-2026/JadeCity4.jpg",
+          "photos/08-28-2026/JadeCity5.jpg",
+          "photos/08-28-2026/S-p-08-28-2026-004.jpg",
+          "photos/08-28-2026/JadeCity9.jpg",
+          "photos/08-28-2026/JadeCity10.jpg",
+          "photos/08-28-2026/JadeCity11.jpg",
+          "photos/08-28-2026/JadeCity12.jpg",
+          "photos/08-28-2026/S-p-08-28-2026-005.jpg",
+          "photos/08-28-2026/S-p-08-28-2026-006.jpg",
+          "photos/08-28-2026/S-p-08-28-2026-007.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            } else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          } else if (filename.match(/\.mp4$/i)) {
+            const vid = document.createElement("video");
+            vid.src = filename;
+            vid.controls = true;
+            block.appendChild(vid);
+          } else if (filename.match(/\.mp3$/i)) {
+            const aud = document.createElement("audio");
+            aud.src = filename;
+            aud.controls = true;
+            block.appendChild(aud);
+          }
+
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_28();
+    </script>
+    <!--Saturday-->
+    <h5 class="date">Saturday, August 29, 2026</h5>
+
+    <div id="story-2026-08-29"></div>
+
+    <script>
+      async function loadStory_2026_08_29() {
+        const container = document.getElementById("story-2026-08-29");
+
+        const files = [
+          "photos/08-29-2026/pm-12-04.jpg",
+          "photos/08-29-2026/pm-1-20.jpg",
+        ];
+
+        for (const filename of files) {
+          const block = document.createElement("div");
+          block.className = "story-block";
+
+          if (filename.match(/\.(jpg|jpeg|png)$/i)) {
+            if (filename.toLowerCase().includes("pano")) {
+              block.classList.add("pano");
+
+              const kb = document.createElement("div");
+              kb.className = "kb-container";
+
+              const img1 = document.createElement("img");
+              img1.className = "kb-pano";
+              img1.src = filename;
+
+              const img2 = document.createElement("img");
+              img2.className = "kb-pano";
+              img2.src = filename;
+
+              kb.appendChild(img1);
+              kb.appendChild(img2);
+              block.appendChild(kb);
+            } else {
+              const img = document.createElement("img");
+              img.src = filename;
+              block.appendChild(img);
+            }
+          }
+
+          const captionName = filename.replace(
+            /\.(jpg|jpeg|png|mp4|mp3)$/i,
+            ".txt",
+          );
+
+          try {
+            const capResp = await fetch(captionName);
+            if (capResp.ok) {
+              const captionText = await capResp.text();
+              const caption = document.createElement("div");
+              caption.className = "caption";
+              caption.innerHTML = captionText;
+              block.appendChild(caption);
+            }
+          } catch {}
+
+          container.appendChild(block);
+        }
+      }
+
+      loadStory_2026_08_29();
     </script>
   </body>
 </html>
